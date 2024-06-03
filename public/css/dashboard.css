@@ -1,0 +1,141 @@
+body {
+    overflow-x: hidden;
+}
+
+.sidebar {
+    z-index: 100;
+}
+
+.sidebar .fas {
+    font-size: 1rem;
+}
+
+.list-group-item {
+    transition: all 0.3s;
+}
+
+.list-group-item:hover {
+    /* background: #f8f9fa; */
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-menu-right {
+    right: 0 !important;
+    left: auto !important;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.jumbotron {
+    margin-top: 20px;
+}
+
+a.list-group-item,
+a.list-group-item:focus,
+a.list-group-item:hover {
+    border: none;
+    border-radius: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+button.list-group-item {
+    background-color: transparent;
+    border: none;
+}
+
+button.list-group-item:focus {
+    outline: none;
+}
+.header_dropdown {
+    position: relative;
+}
+.admin_content {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px 18px;
+}
+.admin_data {
+    cursor: pointer;
+    display: flex;
+}
+
+.admin_data .admin_name {
+    padding: 8px 0;
+    padding-left: 5px;
+}
+.admin_name a {
+    /* color: #fff; */
+}
+
+.admin_dropdownicon {
+    padding-top: 7px;
+    padding-left: 3px;
+}
+.account_dropdown {
+    min-width: 10rem;
+    top: 100%;
+    position: absolute;
+    padding: 4px 0px;
+    background: #fff;
+    box-shadow: 0 3px 12px #d6e4f1;
+    z-index: 3;
+    border: 1px solid rgba(0, 0, 0, .15);
+    /* border-radius: 10px; */
+    background-clip: padding-box;
+    display: none;
+
+}
+
+.account_dropdown:before {
+    position: absolute;
+    top: -7px;
+    right: 9px;
+    display: inline-block !important;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #eee;
+    border-left: 7px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, .2);
+    content: '';
+}
+
+.account_dropdown_item a{
+    display: block;
+    color: #555;
+    width: 100%;
+    clear: both;
+    font-weight: 300;
+    padding: 6px 24px;
+    font-size: 12px;
+    /* background-color: transparent; */
+    border: 0;
+    transition: .7s;
+    line-height: 18px;
+    white-space: nowrap;
+}
+
+.account_dropdown_item a:hover{
+    color: #007bff;
+    transition: .7s;
+}
+
+.account_dropdown_item a i{
+    line-height: 1;
+    margin-right: 20px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.account_dropdown_body {
+    padding: 5px 0;
+    background-color: #fff;
+}
+.account_dropdown_name {
+    padding: 10px;
+}
