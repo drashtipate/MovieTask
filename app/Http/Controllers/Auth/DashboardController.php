@@ -32,10 +32,10 @@ class DashboardController extends Controller
             'watch_button_title' => 'required|string|max:255',
             'watch_url' => 'required|url',
             'trailer_url' => 'required|url',
-            // 'genres' => 'required|array',
-            // 'genres.*' => 'exists:genres,id',
-            // 'cast' => 'required|array',
-            // 'cast.*' => 'exists:casts,id',
+            'genres' => 'required|array',
+            'genres.*' => 'exists:genres,id',
+            'casts' => 'required|array',
+            'casts.*' => 'exists:casts,id',
             'poster' => 'required|image|mimes:jpeg,png,jpg|max:2048',
             'video_poster' => 'required|image|mimes:jpeg,png,jpg|max:2048',
             // 'video_poster' => 'required|image|mimes:jpeg,png,jpg,mp4,mov,ogg|max:20480',
@@ -76,7 +76,7 @@ class DashboardController extends Controller
         $movie->casts()->attach($request->casts);
         $movie->genres()->attach($request->genres);
 
-        return redirect('/moviesstore')->with('success', 'Movie created successfully.');
+        return redirect('/movie/view')->with('success', 'Movie created successfully.');
     }
 
     public function moviesview()
